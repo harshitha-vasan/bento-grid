@@ -1,0 +1,85 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+.body{
+    max-width: 100px;
+    max-height: 50px;
+} 
+.one{
+    /* margin: 40px; */
+    /* padding: 35px 25px;
+    border: 0px; */
+    background-color: hsl(31, 66%, 93%);
+    display: grid;
+    grid-area: one;
+    
+}
+.two{
+    grid-area: two;
+    background-color: hsl(256, 67%, 59%);
+    /* display: flex;
+    flex-direction: column; */
+    align-items: center;
+}
+.three{
+    background-color: hsl(254, 88%, 90%);
+    display: grid;
+    justify-content: center;
+    grid-area: three;
+}
+/* .three img{
+    display: grid;
+    justify-content: end;
+} */
+.four{
+    background-color: hsl(39, 100%, 71%);
+    grid-area: four;
+}
+.five{
+    background-color: white;
+    grid-area: five;
+}
+.six{
+    background-color: hsl(39, 100%, 71%);
+    grid-area: six;
+}
+.seven{
+    background-color: white;
+    grid-area: seven;
+}
+.eight{
+    background-color: hsl(256, 67%, 59%);
+    grid-area: eight;
+}
+.container{
+    background-color: rgb(241, 241, 241);
+    font-family: 'DM Sans';
+    font-weight: 400px;
+    font-size: 16px;
+    margin: 50px;
+    /* max-height: 80; */
+    /* margin: 80px; */
+    /* margin-left: 1000px; */
+    /* max-width: 1000px; */
+    /* max-height: 50px; */
+    padding: 60px;
+    display: grid;
+    gap: none;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: 'one two two three'
+    'four five six three'
+    'four seven eight eight';
+    justify-content: center;
+}
+.container div{
+    margin: 10px;
+    /* max-width: 700px; */
+    border: 1px;
+    border-radius: 15px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
